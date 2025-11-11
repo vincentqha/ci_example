@@ -2,9 +2,9 @@ import unittest
 import task
 
 
-class TestCase(unittest.TestCase):
+class TestMyFunc(unittest.TestCase):
 
-    def test1(self):
+    def test_my_func(self):
         expected = "Hello World"
         self.assertEqual(task.my_func(), expected)
 
