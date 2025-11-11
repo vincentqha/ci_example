@@ -2,10 +2,14 @@ import unittest
 import task
 
 
-class TestMyFunc(unittest.TestCase):
+class TestCase(unittest.TestCase):
 
-    def test_my_func(self):
+    def test1(self):
         expected = "Hello World"
+        self.assertEqual(task.my_func(), expected)
+
+    def test2(self):
+        expected = "Hola World"
         self.assertEqual(task.my_func(), expected)
 
 
