@@ -11,6 +11,10 @@ class TestCase(unittest.TestCase):
     def test2(self):
         expected = "Hola World"
         self.assertEqual(task.my_func(), expected)
+        
+    def test3(self):
+        expected = "Hello Monkey"
+        self.assertIsNot(task.my_func(), expected)
 
 
 if __name__ == '__main__':
